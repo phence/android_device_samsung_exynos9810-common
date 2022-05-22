@@ -30,7 +30,6 @@ PRODUCT_PACKAGES += \
     android.hardware.audio@5.0-impl:32 \
     android.hardware.audio.service \
     android.hardware.bluetooth.audio@2.0-impl:32 \
-    android.hardware.soundtrigger@2.0-impl:32 \
     android.hidl.allocator@1.0.vendor:32 \
     audio.a2dp.default \
     audio.bluetooth.default \
@@ -309,10 +308,6 @@ PRODUCT_PACKAGES += \
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.3-service.samsung
-
-# Soundtrigger
-PRODUCT_PACKAGES += \
-    android.hardware.soundtrigger@2.0-impl:32
 
 # Vibrator
 PRODUCT_PACKAGES += \
