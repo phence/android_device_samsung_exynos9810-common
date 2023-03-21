@@ -7,6 +7,9 @@
 # Camera
 /dev/m2m1shot_scaler0          u:object_r:m2m1shot_device:s0
 
+### FACTORY
+/factory(/.*)?                 u:object_r:sec_efs_file:s0
+
 # Graphics
 /dev/g2d                       u:object_r:graphics_device:s0
 /dev/mali[0-9]                 u:object_r:gpu_device:s0
@@ -30,6 +33,9 @@
 /sys/devices/platform/13ac0000.spi(/.*)/buffer/length    u:object_r:sysfs_sensors_writable:s0
 
 /sys/devices/virtual/input(/.*)/enable                   u:object_r:sysfs_sensors_writable:s0
+
+# ZRAM
+/dev/block/zram0                                         u:object_r:swap_block_device:s0
 
 # Audio (Soundtrigger)
 /dev/vts_fio_dev                                         u:object_r:vts_fio_device:s0
